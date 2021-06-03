@@ -1,6 +1,6 @@
 import { Carousel, Empty } from 'antd';
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import LayoutPage from '../layout/Layout';
 import firebase from '../../firebase';
 import ProductComponent from '../layout/product';
@@ -59,6 +59,10 @@ const CategoryPage = () => {
           }
           return cateName;
       }
+      const history = useHistory();
+      const loadingDefault  = (id, cate) => {
+        return history.push('/product/detail/'+id+'/'+cate)
+     }
     return(
         <LayoutPage>
             <div className="row" style={{marginTop:60}}>
@@ -83,7 +87,7 @@ const CategoryPage = () => {
                   <div className="row">
                       {todoList ? todoList.map((key,index)=>(
                         <div className="col-sm-3">
-                        <ProductComponent data={key} product="sale" />
+                        <ProductComponent data={key} product="sale"  click={loadingDefault}/>
                         </div>
                       )): 
                       <div className="col-sm-12">
