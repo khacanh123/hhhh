@@ -1,4 +1,4 @@
-import { Card, Carousel, Col, Row, Typography } from 'antd';
+import { Card, Carousel, Col, Modal, Row, Typography } from 'antd';
 import React, { useEffect, useState } from 'react';
 import LayoutPage from '../layout/Layout';
 import firebase from '../../firebase';
@@ -12,6 +12,17 @@ const HomePage = () => {
         width:'100%'
       };
       const [todoList, setTodoList] = useState([]);
+      const [isModalVisible, setIsModalVisible] = useState(true);
+
+     
+    
+      const handleOk = () => {
+        setIsModalVisible(false);
+      };
+    
+      const handleCancel = () => {
+        setIsModalVisible(false);
+      };
     useEffect(() => {
         const todoRef = firebase.database().ref('product').orderByChild('p_status').equalTo('sale');
         todoRef.on('value', (snapshot) => {
@@ -140,6 +151,14 @@ const HomePage = () => {
                     
                   </div>
                 </div>
+                
+                <Modal title="Website bán hàng HinMart" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        
+        <p>Bài tập cuối kỳ học phần: Lập trình website</p>
+        <p>Giảng viên: Mai Trung Đông</p>
+        <p>Mã số sinh viên: 1805HTTA003</p>
+        <p>Họ và tên: Nguyễn Khắc Anh</p>
+      </Modal>
             </LayoutPage>
         </>
     )
