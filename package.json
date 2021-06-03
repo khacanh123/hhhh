@@ -1,0 +1,65 @@
+{
+  "name": "react-exp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ckeditor/ckeditor5-build-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-react": "^3.0.2",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "antd": "^4.15.3",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "ckeditor4-react": "^1.4.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "firebase": "^8.6.2",
+    "html-react-parser": "^1.2.6",
+    "jquery": "^3.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "md5": "^2.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-firebase-file-uploader": "^2.4.4",
+    "react-gifted-chat": "^1.0.5",
+    "react-html-parser": "^2.0.2",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-slugify": "^2.0.3",
+    "react-verification-code-input": "^1.2.9",
+    "react-web-gifted-chat": "^0.6.7",
+    "redux": "^4.1.0",
+    "redux-socket.io": "^1.4.0",
+    "socket.io-client": "^4.1.2",
+    "web-vitals": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
