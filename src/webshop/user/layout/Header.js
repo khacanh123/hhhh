@@ -110,6 +110,11 @@ const HeaderComponent = () => {
     <li className="nav-item d-none d-sm-inline-block">
       <a href="#" className="nav-link">xin chào, {username.data}</a>
     </li>
+    {username.level === 2 ?
+    <li className="nav-item d-none d-sm-inline-block">
+    <NavLink to='/admin' className="nav-link">Trang quản trị  </NavLink>
+  </li>: null
+    }
     <li className="nav-item d-none d-sm-inline-block">
       <a href="#" onClick={LogOut} className="nav-link">Đăng xuất</a>
     </li>

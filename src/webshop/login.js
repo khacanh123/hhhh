@@ -42,7 +42,12 @@ const LoginPage = () => {
         localStorage.setItem('token', token);
         message.success('Đăng nhập thành công');
         check = false;
-        return history.push('/');
+        if(key.level === 2){
+          return history.push('/admin');
+        }else{
+          return history.push('/');
+        }
+        
       }
     })
     if(check){
