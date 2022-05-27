@@ -26,7 +26,7 @@ const PaymentPage = () => {
             fullname: name,
             telephone_user: telephone,
             address_user: address,
-            status:'Chờ HinMart xác nhận đơn hàng'
+            status:'Chờ MinaShop xác nhận đơn hàng'
         }
         newOrder.push(order);
         localStorage.removeItem('myCart');

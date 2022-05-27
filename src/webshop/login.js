@@ -58,7 +58,7 @@ const LoginPage = () => {
         <div className="login-page" style={{minHeight:512.391}}>
           <div className="login-box">
   <div className="login-logo">
-    <NavLink to="/"><b>HinMart</b></NavLink>
+    <NavLink to="/"><b>MinaShop</b></NavLink>
   </div>
   {/* /.login-logo */}
   <div className="card">

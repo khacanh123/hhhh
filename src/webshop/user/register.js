@@ -34,7 +34,7 @@ const RegisterPage = () => {
         <div className="register-page" style={{minHeight:586.391}}>
               <div className="register-box">
   <div className="register-logo">
-    <NavLink to='/'><b>HinMart</b></NavLink>
+    <NavLink to='/'><b>MinaShop</b></NavLink>
   </div>
   <div className="card">
     <div className="card-body register-card-body">
@@ -77,7 +77,7 @@ const RegisterPage = () => {
             <div className="icheck-primary">
               <input type="checkbox" id="agreeTerms" name="terms" checked defaultValue="agree" />
               <label htmlFor="agreeTerms">
-                Tôi đồng ý với <a href="#">điều khoản của HinMart</a>
+                Tôi đồng ý với <a href="#">điều khoản của MinaShop</a>
               </label>
             </div>
           </div>

@@ -81,12 +81,9 @@ const AddProduct = () => {
   <label>Danh mục sản phẩm</label>
   <select className="form-control select2bs4" name="category" style={{width: '100%'}} onChange={onChangeValue}>
     <option>Danh mục sản phẩm</option>
-    <option value="1">Thời trang</option>
-    <option value="2">Điện thoại di động</option>
-    <option value="3">Hàng tạp hóa</option>
-    <option value="4">Bỉm sữa</option>
-    <option value="5">Đồ dùng gia đình</option>
-    <option value="6">Đồ chơi trẻ em</option>
+    <option value="1">Thời trang nữ</option>
+    <option value="2">Thời trang nam</option>
+    <option value="3">Thời trang trẻ em</option>
   </select>
 </div>
 <div className="form-group">

@@ -35,22 +35,13 @@ const CategoryPage = () => {
           let cateName = '';
           switch (cate) {
               case 1:
-                  cateName = 'Thời trang';
+                  cateName = 'Thời trang nữ';
                   break;
               case 2:
-                  cateName = 'Điện thoại di động';
+                  cateName = 'Thời trang nam';
                   break;
               case 3: 
-                  cateName = 'Phụ kiện điện thoại';
-                  break;
-              case 4: 
-                  cateName = 'Bỉm & Sữa';
-                  break;
-              case 5:
-                  cateName = 'Đồ dùng gia đình';
-                  break;
-              case 6:
-                  cateName = 'Đồ chơi trẻ em';
+                  cateName = 'Thời trang trẻ em';
                   break;
           
               default:

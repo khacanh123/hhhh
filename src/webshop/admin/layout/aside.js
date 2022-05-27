@@ -7,7 +7,7 @@ const AsideComponent = () => {
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
   {/* Brand Logo */}
   <NavLink to="/admin" className="brand-link">
-    <span className="brand-text font-weight-light">HinMart</span>
+    <span className="brand-text font-weight-light">MinaShop</span>
   </NavLink>
   {/* Sidebar */}
   <div className="sidebar">
@@ -57,7 +57,6 @@ const AsideComponent = () => {
             </p>
           </NavLink>
         </li>
-        
         {/* <li className="nav-header">EXAMPLES</li>
         
         <li className="nav-item">

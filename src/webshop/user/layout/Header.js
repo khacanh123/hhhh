@@ -47,7 +47,7 @@ const HeaderComponent = () => {
   {/* Left navbar links */}
   <ul className="navbar-nav">
   <li className="nav-item">
-  <NavLink className="nav-link" data-widget="pushmenu" to='/' style={{fontWeight:'bold'}} role="button">HinMart</NavLink>
+  <NavLink className="nav-link" data-widget="pushmenu" to='/' style={{fontWeight:'bold'}} role="button">MinaShop</NavLink>
 </li>
     <li className="nav-item d-none d-sm-inline-block">
       <NavLink to='/order-infor' className="nav-link"><i className="fa fa-bell" /> Thông tin đơn hàng</NavLink>
